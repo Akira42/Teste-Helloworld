@@ -1,0 +1,382 @@
+/* declaração de fontes */
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/Barlow-Regular.ttf");
+}
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/Barlow-Bold.ttf");
+    font-weight: bold;
+}
+
+/* estilização geral */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Barlow, Helvetica, sans-serif;
+}
+
+.logo {
+    max-width: 114px;
+    max-height: 74px;
+    margin: auto;
+}
+
+/* header e menu */
+
+.nav-links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 0 1vw;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color:#000;
+    text-transform: uppercase;
+}
+
+.bag-icon {
+    margin-bottom: 9px;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 999;
+    background-color: #eee;
+}
+
+.navbar-desk {
+    padding: 35px 0;
+}
+  
+/* main content */
+
+.banner-texto {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-texto button {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-width: 10px;
+    border-radius: 40px;
+}
+
+.banner-texto p {
+    font-weight: bold;
+}
+
+.banner-texto h1 {
+    font-size: 75px;
+    letter-spacing: 25px;
+}
+
+.banner-img {
+    padding-top: 144px;
+    width: 100%;
+}
+
+.banner-img img {
+    opacity: 0.7;
+}
+
+.banner {
+    position: relative;
+    background-color: #000;
+}
+
+.container-fluid {
+    padding: 0;   
+}
+
+.col {
+    padding: 0;
+}
+
+/* seção collections */
+
+.collection h2 {
+    margin: 50px 0;
+    font-size: 18px;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.collections-pag .pagination {
+    position: absolute;
+    margin-top: -19px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.collections-pag ul li a {
+    border:none;
+}
+
+.collection-prod-row {
+    text-align:center;
+}
+
+.collection-prod a {
+    text-decoration: none;
+    color: #000;
+}
+
+.page-link {
+    color: #000;
+    text-align:center;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.page-link:hover, .page-link:focus {
+    color: #000;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    z-index: 999;
+}
+
+/* form contato */
+#form-contato {
+    text-align:right;
+    float:right;
+    width: 70%;
+}
+
+.form-contato-field, input {
+    display:block;
+    margin-bottom:25px;
+    padding: 15px;
+    background-color: #000;
+    border: 1px solid #333;
+    color: #fff;
+    font-weight:bold;
+    width: 100%;
+}
+
+.form-ctn {
+    background-color: #000;
+    padding: 60px 0;
+}
+
+.form-ctn .container, .footer .row {
+    width: 90%;
+    margin:auto;
+}
+
+.form-btn {
+    border-radius: 0;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-top: 25px;
+}
+
+/* texto fale conosco */
+
+.contato-text h3, .contato-text p {
+    color: #fff;
+}
+.contato-text h3 {
+    margin-bottom: 80px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contato-text p {
+    font-size: 50px;
+    padding-right: 40px;
+}
+
+textarea.form-contato-field {
+    height: 150px;
+}
+
+/* footer geral */
+.footer {
+    background-color: #333;
+}
+
+.footer-col1 {
+    color: #ccc;
+    padding: 40px 0;
+}
+
+.footer-col2 {
+    color: #fff;
+    padding: 40px 0;
+}
+
+.nav-links-footer ul:first-child {
+    padding-right: 40px;
+}
+
+.nav-links-footer ul li a, .copyright {
+    text-decoration: none;
+    color: #888
+}
+
+.copyright {
+    font-size: 14px;
+    display: flex;
+}
+
+.copyright p {
+    padding-right: 40px;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.social {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icons a i{
+    color: #fff;
+    padding-right: 25px;
+}
+
+.nav-links-footer {
+    margin: 0!important;
+}
+
+.newsletter h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter p {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.form-newsletter-field {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: #444;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    width: 70%;
+}
+
+.form-newsletter-btn {
+    padding: 25px;
+    border-radius: 0 45px 45px 0;
+    font-weight: bold;
+    width: 30%;
+    margin-bottom: 4px;
+    margin-left: -4px;
+    border-width: 0;
+}
+
+/* media query */
+@media (max-width: 992px) {
+    /* espaçamento superior banner */
+    .banner-img {
+        padding-top: 100px;
+    }
+    
+    /* texto banner */
+    .banner-texto h1 {
+        padding-top: 100px;
+        font-size: 40px;
+    }
+
+    .banner-texto p {
+        font-size: 12px;
+    }
+
+    .banner-texto button {
+        border-width: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0;
+    }
+
+    /* texto contato */
+    .contato-text p {
+        font-size: 30px;
+        padding-right: 40px;
+    }
+    
+    /* form contato */
+    #form-contato {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .blank-space {
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+    .prod1 {
+        display:none;
+    }
+}
+
+input[type='radio']:after , input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']#v1:after , input[type='radio']#v1:checked:after {
+    background-color: #000;
+}
+
+input[type='radio']#v2:after , input[type='radio']#v2:checked:after {
+    background-color: rgb(160, 144, 91);
+}
+
+input[type='radio']#v3:after , input[type='radio']#v3:checked:after {
+    background-color: rgb(75, 63, 51);
+}
+
+input[type='radio']:checked:after {
+    border: 2px solid #000;
+}
+
+.cores input {
+    width: 10px;
+    display: inline-block;
+        margin: 5px;
+}
